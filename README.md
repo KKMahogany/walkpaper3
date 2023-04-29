@@ -1,34 +1,38 @@
-# Walkpaper2
-https://extensions.gnome.org/extension/5267/walkpaper2/
+# Walkpaper3
 
-## About:
+Forked from Walkpaper2 (https://extensions.gnome.org/extension/5267/walkpaper2/)
+
+## About
 Have a different wallpaper on each GNOME workspace.
 
-Compatibility for GNOME 42 (and beyond?)
+Compatibility for GNOME 43 (and beyond?)
 
-## Installation:
+## Installation
 Compile the extension by running
 ```
-    # make all
+make all
 ```
-Install `walkpaper.zip` using Tweak Tool and restart GNOME Shell (alt+F2 + 'r').
+Install `walkpaper3.zip` using Tweak Tool and restart GNOME Shell (alt+F2 + 'r' on X11).
 
-At this point you have two options:
+## Configuring wallpapers
 
-You can either open extension's preferences and set paths to each workspace's wallpaper by double clicking on a specific row or use the default wallpaper changing method in GNOME settings.
+You have two options:
 
-More about the second method:
+### Using Walkpaper3 preferences
 
-To set the background image for a workspace, switch to that workspace and use any method to
-change the background E.g. standard background chooser (e.g. secondary click on background, "Change Background"),
-then close the backgrounds dialog (otherwise trying to set background on another workspace may trigger a workspace
-change back to the WS with the dialog)
+You can open extension's preferences and set paths to each workspace's wallpaper
+(double-click on a specific row to open a file explorer).
 
-You can even use another extension or program that changes the backgrounds automatically.
+Remember that you can open extension settins from https://extensions.gnome.org/local/
 
-Switch away from the workspace to trigger saving the current background.
+### Use the default wallpaper changing method in GNOME settings.
 
-Remember that you can always manage your extensions from https://extensions.gnome.org/local/
+Walkpaper3 watches for `workspace-switched`, saving the previous workspace's background.
+This means that you can change the background image in a workspace and when you
+next switch to another workspace, the change will be persisted.
 
-## License:
+This works regardless of how the background was changed
+(you could have other extensions or programs modify the background, and those changes will be persisted).
+
+## License
 This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
