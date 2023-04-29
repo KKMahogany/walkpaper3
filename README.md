@@ -1,6 +1,7 @@
 # Walkpaper3
 
-Forked from Walkpaper2 (https://extensions.gnome.org/extension/5267/walkpaper2/)
+Forked from Walkpaper2 (https://extensions.gnome.org/extension/5267/walkpaper2/).
+I mostly forked this to add GNOME 43 to the compatibility list.
 
 ## About
 Have a different wallpaper on each GNOME workspace.
@@ -33,6 +34,12 @@ next switch to another workspace, the change will be persisted.
 
 This works regardless of how the background was changed
 (you could have other extensions or programs modify the background, and those changes will be persisted).
+
+## Limitations
+
+The workspace thumbnails of the
+[Workspace Matrix extension](https://extensions.gnome.org/extension/1485/workspace-matrix/) will all show the wallpaper
+of the current active workspace.
 
 ## License
 This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details

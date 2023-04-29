@@ -188,7 +188,7 @@ const WalkpaperSettingsWidget = new GObject.Class({
             let filename = "file://" + file.get_path();
             //We own the file and need to release them after being done
             file.unref();
-	    //log(filename)
+            //log(filename)
 
             let _store = new WalkpaperModel();
             let [ok, iter] = _store.get_iter(path);
@@ -214,8 +214,8 @@ const WalkpaperSettingsWidget = new GObject.Class({
     changeWallpaper: function(source, wallpaper) {
         let colorSettings = new Gio.Settings({ schema_id: INTERFACE_SCHEMA });
         let scheme = colorSettings.get_string(COLOR_SCHEME_KEY);
-	//log("SCHEME:")
-	//log(scheme);
+        //log("SCHEME:")
+        //log(scheme);
         if ( scheme == 'prefer-dark' ) {
            CURRENT_WALLPAPER_KEY = 'picture-uri-dark';
         }

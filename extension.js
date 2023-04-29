@@ -22,14 +22,16 @@ function debugLog(s) {
 
 
 function _changeWallpaper() {
-	_changeWallpaperTimeout = GLib.timeout_add(GLib.PRIORITY_HIGH, 500, 
-		function() {
-			_changeWallpaper_delay();
-	        	_changeWallpaperTimeout = null;
-		        return GLib.SOURCE_REMOVE;
-		}
-	)
-	//Mainloop.timeout_add(500, _changeWallpaper_delay );
+    // Delay wallpaper change by 500ms, so that we don't reload the background
+    // a bunch of times when switching through multiple workspaces quickly
+    _changeWallpaperTimeout = GLib.timeout_add(GLib.PRIORITY_HIGH, 500, 
+        function() {
+            _changeWallpaper_delay();
+            _changeWallpaperTimeout = null;
+            return GLib.SOURCE_REMOVE;
+        }
+    )
+    //Mainloop.timeout_add(500, _changeWallpaper_delay );
 }
 
 
