@@ -14,7 +14,7 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const WORKSPACE_COUNT_KEY = 'workspace-count';
 const WORKSPACE_INDEX = 'workspace-index';
 const WALLPAPERS_KEY = 'workspace-wallpapers';
-let   CURRENT_WALLPAPER_KEY = 'picture-uri';
+let   CURRENT_WALLPAPER_KEY = 'picture-uri-dark';
 const INTERFACE_SCHEMA = 'org.gnome.desktop.interface';
 const COLOR_SCHEME_KEY = 'color-scheme'
 

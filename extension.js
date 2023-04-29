@@ -9,7 +9,7 @@ const WORKSPACE_COUNT_KEY = 'workspace-count';
 const WORKSPACE_INDEX = 'workspace-index';
 const WALLPAPERS_KEY = 'workspace-wallpapers';
 const BACKGROUND_SCHEMA = 'org.gnome.desktop.background';
-let   CURRENT_WALLPAPER_KEY = 'picture-uri';
+let   CURRENT_WALLPAPER_KEY = 'picture-uri-dark';
 const INTERFACE_SCHEMA = 'org.gnome.desktop.interface';
 const COLOR_SCHEME_KEY = 'color-scheme'
 
